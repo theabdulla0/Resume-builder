@@ -1,4 +1,4 @@
-export const BASE_URL = "https://resume-builder-ne1d.onrender.com";
+export const BASE_URL = import.meta.env.VITE_API_URL || (import.meta.env.DEV ? "http://localhost:5000" : "https://resume-builder-ne1d.onrender.com");
 
 export const API_PATHS = {
   AUTH: {
