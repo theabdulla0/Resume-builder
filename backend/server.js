@@ -31,7 +31,7 @@ app.use("/api/auth", userRoutes);
 app.use("/api/resume", resumeRouter);
 
 app.use(
-  "/uploads",
+  "/api/uploads",
   express.static(path.join(__dirname, "uploads"))
 );
 

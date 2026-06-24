@@ -23,7 +23,7 @@ export const uploadResumeImages = async (req, res) => {
           const oldThumbnail = path.join(uploadsFolder, path.basename(resume.thumbnailLink));
           if (fs.existsSync(oldThumbnail)) fs.unlinkSync(oldThumbnail);
         }
-        resume.thumbnailLink = `${baseUrl}/uploads/${newThumbnail.filename}`;
+        resume.thumbnailLink = `${baseUrl}/api/uploads/${newThumbnail.filename}`;
       }
 
       if (newProfileImg) {
@@ -32,7 +32,7 @@ export const uploadResumeImages = async (req, res) => {
           if (fs.existsSync(oldProfile)) fs.unlinkSync(oldProfile);
         }
         resume.profileInfo = resume.profileInfo || {};
-        resume.profileInfo.profilePreviewUrl = `${baseUrl}/uploads/${newProfileImg.filename}`;
+        resume.profileInfo.profilePreviewUrl = `${baseUrl}/api/uploads/${newProfileImg.filename}`;
       }
 
       await resume.save();
