@@ -4,7 +4,7 @@ A premium, modern, full-stack web application that allows users to seamlessly cr
 
 <p align="center">
   <strong>Build, save, preview, and export your professional resume in minutes!</strong><br>
-  🌐 Live Demo: <a href="https://github.com/theabdulla0/Resume-builder" target="_blank">GitHub Repository</a>
+  🌐 Live Demo: <a href="https://resume-builder-oxu6.vercel.app/" target="_blank">GitHub Repository</a>
 </p>
 
 ---
